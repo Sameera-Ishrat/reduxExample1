@@ -155,3 +155,24 @@ font-size: 1.5rem;
 .productTitle {
 font-size: 1.3rem;
 }
+
+/*********************Responsive Layout *********************/
+
+@media(max-width:1200px) {
+  .productsWrapper {
+    grid-template-columns: repeat(3, 1fr)
+  }
+
+}
+@media(max-width:980px) {
+  .productsWrapper {
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+}
+@media(max-width:768px) {
+  .productsWrapper {
+    grid-template-columns: 1fr
+  }
+
+}
