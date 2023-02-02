@@ -33,7 +33,7 @@ const productSlice = createSlice({
 
 })
 
-export const {setProduct,setStatus} = productSlice.actions;
+// export const {setProduct,setStatus} = productSlice.actions;
 export default productSlice.reducer;
 
 //thunk
