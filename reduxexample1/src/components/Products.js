@@ -31,7 +31,7 @@ dispatch(add(product));
     }
 
     if(status === STATUS.LOADING) {
-        return <p>LOADING...</p>
+        return <p style={{textAlign:"center"}}>LOADING...</p>
     }
     if(status === STATUS.ERROR) {
         return <p>Something went wrong</p>

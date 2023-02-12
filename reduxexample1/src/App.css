@@ -114,7 +114,6 @@ img {
   color: #fff;
 }
 .cartWrapper {
- 
   padding: 2rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -129,11 +128,13 @@ img {
   align-items: center;
   gap: 2rem;
  margin: 2rem; */
- display: grid;
- grid-template-columns: repeat(3,1fr);
- gap: 2rem;
- border-bottom: 1px solid #aaa;
-    margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  margin: 1rem 0;
+  width: 90%;
+  align-items: center;
+  justify-items: center;
 }
 .cartCount {
   background-color: red;
@@ -150,29 +151,57 @@ img {
   font-size: 1rem;
 }
 .productPrice {
-font-size: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .productTitle {
-font-size: 1.3rem;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
-
+.card {
+  background-color: #fff;
+  border: 0.1rem solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  margin: auto;
+}
+.totalAmount {
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.actionBtn {
+  width: 5rem;
+  cursor: pointer;
+}
 /*********************Responsive Layout *********************/
 
-@media(max-width:1200px) {
+@media (max-width: 1200px) {
   .productsWrapper {
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr);
   }
-
+  .cartCard {
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
 }
-@media(max-width:980px) {
+@media (max-width: 980px) {
   .productsWrapper {
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
   }
+  .cartCard {
+    grid-template-columns: repeat(2, 1fr);
 
+  }
 }
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .productsWrapper {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
   }
+  .cartCard {
+    grid-template-columns: 1fr;
 
+  }
 }
