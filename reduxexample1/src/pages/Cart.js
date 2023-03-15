@@ -21,6 +21,7 @@ const Cart = () => {
         
         // ...product
       })
+      // add({...product})
     );
   };
 
@@ -65,12 +66,15 @@ const Cart = () => {
           </>
         ))}
       </div>
-      <Card>
-        <section className="totalAmount">
+      {/* <Card> */}
+      <section className="total">
+      <div className="totalAmount">
           <h3 className="totalText">Total Amount:</h3>
           <div className="totalPrice">${totalAmount.toFixed(2)}</div>
-        </section>
-      </Card>
+        </div>
+      </section>
+        
+      {/* </Card> */}
     </>
   );
 };

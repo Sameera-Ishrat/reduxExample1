@@ -10,7 +10,7 @@ const Navbar = () => {
     const totalQuantity = useSelector((state) => state.cart.totalQuantity);
   return (
     <div className='navbar container'>
-        <span className='reduxStore'>REDUX STORE</span>
+    <Link to="/"><span className='reduxStore'>REDUX STORE</span></Link>    
         <div className='navigation'>
             <Link to="/">Home</Link>
             {/* <Link to="/cart" style={{position:'relative'}}>Cart</Link> */}

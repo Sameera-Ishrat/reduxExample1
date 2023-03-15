@@ -176,6 +176,14 @@ img {
   width: 5rem;
   cursor: pointer;
 }
+.total 
+{
+  width: 25%;
+    display: flex;
+    margin-left: 1;
+    margin-left: auto;
+    font-size: 1.3rem;
+}
 /*********************Responsive Layout *********************/
 
 @media (max-width: 1200px) {
@@ -195,6 +203,9 @@ img {
     grid-template-columns: repeat(2, 1fr);
 
   }
+  .total {
+    margin: auto;
+  }
 }
 @media (max-width: 768px) {
   .productsWrapper {
@@ -203,5 +214,8 @@ img {
   .cartCard {
     grid-template-columns: 1fr;
 
+  }
+  .total {
+    margin: auto;
   }
 }
